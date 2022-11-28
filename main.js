@@ -1,10 +1,12 @@
 const todoForm = document.querySelector("#todoForm");
 const todoList = document.querySelector("#todoList");
 
-fetch ("http://localhost:3000/notes/", {
+function getNote () {
+  fetch ("http://localhost:3000/notes/", {
   method: "GET",
   headers: {"Content-Type": "application/json"},
 })
+}
 
 function postNote (note) {
   fetch("http://localhost:3000/notes/", {
@@ -19,5 +21,4 @@ function postNote (note) {
 todoForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
-}
-);
+});

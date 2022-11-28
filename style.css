@@ -11,17 +11,20 @@
 }
 
 #page-title {
-  padding: 3% 3% 2% 3%;
+  padding: 3%;
   align-self: center;
 }
 
 #todo {
   width: 95%;
+  align-items: center;
+  justify-content: center;
 }
 
 #todoForm {
   display: inline-flex;
   flex-direction: row;
+  justify-content: center;
   width: 95%;
 }
 
@@ -30,5 +33,5 @@
   align-self: left;
   width: 70%;
   padding-left: 2%;
-  margin-right: 5%;
+  margin-right: 3%;
 }
