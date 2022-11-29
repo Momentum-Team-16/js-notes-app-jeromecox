@@ -8,13 +8,20 @@ getRequest();
 
 todoForm.addEventListener("submit", (event) => {
   event.preventDefault();
+  if (inputTitle.value === "") {
+    inputTitle.setCustomValidity("Please enter a task category.");
+    inputTitle.reportValidity();
+  } else if (inputBody.value === "") {
+    inputBody.setCustomValidity("Please enter a task.");
+    inputBody.reportValidity();
+  } else {
+    console.log(inputTitle.value);
+    console.log(inputBody.value);
 
-  console.log(inputTitle.value);
-  console.log(inputBody.value);
+    postRequest();
 
-  postRequest();
-
-  todoForm.reset();
+    todoForm.reset();
+  }
 });
 
 function createEl(type, classArray, parent) {

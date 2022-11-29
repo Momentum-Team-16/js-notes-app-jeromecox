@@ -23,7 +23,7 @@
 
 #todoForm {
   display: inline-flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   justify-content: space-between;
   width: 100%;
 }
