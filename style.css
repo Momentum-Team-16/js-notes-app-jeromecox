@@ -24,14 +24,45 @@
 #todoForm {
   display: inline-flex;
   flex-direction: row;
-  justify-content: center;
-  width: 95%;
+  justify-content: space-between;
+  width: 100%;
 }
 
-#inputTodo {
-  border: 2px solid black;
+.input {
   align-self: left;
-  width: 70%;
-  padding-left: 2%;
-  margin-right: 3%;
+  width: 90%;
+  margin: 0 1%;
+}
+
+#todoList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2%;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  margin: 2% 0;
+  height: 7vh;
+  padding: 1%;
+  border: 2px solid black;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.subCard {
+  width: 45%;
+}
+
+.edit-btn {
+  width: 4vw;
+  height: 4vh;
+}
+
+.delete-btn {
+  width: 4vw;
+  height: 4vh;
+  margin-left: 3px;
 }

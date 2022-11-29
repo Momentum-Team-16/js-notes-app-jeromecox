@@ -17,13 +17,29 @@
     <h2 id="page-title">To-Dos!</h2>
     <div id="todo">
       <form id="todoForm">
-        <input
-          id="inputTodo"
-          type="text"
-          placeholder="What do you need to do?"
-        />
-        <button id="submit" class="btn-large" type="submit">Submit</button>
+        <div id="titleDiv" class="input">
+          <label for="inputTitle">Title</label>
+          <input
+            id="inputTitle"
+            type="text"
+            placeholder="What do you need to do?"
+            class="inputInput"
+          />
+        </div>
+        <div id="inputBodyDiv" class="input">
+          <label for="inputBody">Task</label>
+          <input
+            id="inputBody"
+            type="text"
+            placeholder="Enter a task"
+            class="inputInput"
+          />
+        </div>
+        <div id="buttonDiv">
+          <button id="submit" class="btn-large" type="submit">Submit</button>
+        </div>
       </form>
+      <h4 id="currentList">Current Tasks</h4>
       <div id="todoList"></div>
     </div>
   </body>
