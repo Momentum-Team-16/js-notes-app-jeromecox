@@ -24,7 +24,10 @@
 #todoForm {
   display: inline-flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  padding-right: 1%;
+  border: 1px solid black;
 }
 
 .input {
@@ -33,11 +36,16 @@
   margin: 0 1%;
 }
 
+#currentTask {
+  border-top: 2px solid black;
+  margin: 3% 0 0 0;
+  padding-top: 2%;
+}
+
 #todoList {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 2%;
 }
 
 .card {
@@ -46,13 +54,14 @@
   margin: 2% 0;
   height: 7vh;
   padding: 1%;
-  border: 2px solid black;
+  border: 1px solid black;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .subCard {
   width: 45%;
+  padding: 0 1%;
 }
 
 .btn {

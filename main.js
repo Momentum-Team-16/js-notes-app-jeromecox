@@ -34,15 +34,12 @@ function createEl(type, classArray, parent) {
 function makeCard(object) {
   let card = createEl("div", ["card"], todoList);
   card.id = object.id;
-  card.dataset.number = object.id;
 
   let title = createEl("div", ["subCard", "title"], card);
-  title.id = "title" + object.id;
   let titleText = object.title;
   title.innerText = `${titleText}`;
 
   let todoBody = createEl("div", ["subCard", "body"], card);
-  todoBody.id = "body" + object.id;
   let bodyText = object.body;
   todoBody.innerText = `${bodyText}`;
 

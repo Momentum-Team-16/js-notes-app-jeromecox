@@ -14,21 +14,17 @@
     <!-- <script src="modal.js"></script> -->
     <title>Notes</title>
   </head>
-  <body id="container">
+  <body id="container" class="blue-grey lighten-4">
     <h2 id="page-title">To-Dos!</h2>
     <div id="todo">
-      <form id="todoForm" novalidate>
+      <form id="todoForm" class="white" novalidate>
         <div id="titleDiv" class="input">
-          <label for="inputTitle">Title</label>
-          <input
-            id="inputTitle"
-            type="text"
-            placeholder="What do you need to do?"
-          />
+          <label for="inputTitle">Task</label>
+          <input id="inputTitle" type="text" placeholder="Enter a task" />
         </div>
         <div id="inputBodyDiv" class="input">
-          <label for="inputBody">Task</label>
-          <input id="inputBody" type="text" placeholder="Enter a task" />
+          <label for="inputBody">Details</label>
+          <input id="inputBody" type="text" placeholder="Enter task details" />
         </div>
         <div id="buttonDiv">
           <button id="submit" class="btn-large waves-effect" type="submit">
@@ -36,7 +32,7 @@
           </button>
         </div>
       </form>
-      <h4 id="currentList">Current Tasks</h4>
+      <h4 id="currentTask">Current Tasks</h4>
       <div id="todoList"></div>
     </div>
   </body>
