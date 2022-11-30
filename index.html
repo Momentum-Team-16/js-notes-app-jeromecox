@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="main.js" defer></script>
+    <!-- <script src="modal.js"></script> -->
     <title>Notes</title>
   </head>
   <body id="container">
@@ -23,20 +24,16 @@
             id="inputTitle"
             type="text"
             placeholder="What do you need to do?"
-            class="inputInput"
           />
         </div>
         <div id="inputBodyDiv" class="input">
           <label for="inputBody">Task</label>
-          <input
-            id="inputBody"
-            type="text"
-            placeholder="Enter a task"
-            class="inputInput"
-          />
+          <input id="inputBody" type="text" placeholder="Enter a task" />
         </div>
         <div id="buttonDiv">
-          <button id="submit" class="btn-large" type="submit">Submit</button>
+          <button id="submit" class="btn-large waves-effect" type="submit">
+            Submit
+          </button>
         </div>
       </form>
       <h4 id="currentList">Current Tasks</h4>

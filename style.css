@@ -23,7 +23,6 @@
 
 #todoForm {
   display: inline-flex;
-  /* flex-direction: row; */
   justify-content: space-between;
   width: 100%;
 }
@@ -56,18 +55,6 @@
   width: 45%;
 }
 
-.edit-btn {
-  width: 4vw;
-  height: 4vh;
-}
-
-.save-btn {
-  width: 4vw;
-  height: 4vh;
-}
-
-.delete-btn {
-  width: 4vw;
-  height: 4vh;
-  margin-left: 3px;
+.btn {
+  margin: 0 2px;
 }

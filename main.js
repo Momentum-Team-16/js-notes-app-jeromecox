@@ -46,13 +46,13 @@ function makeCard(object) {
   let bodyText = object.body;
   todoBody.innerText = `${bodyText}`;
 
-  let editBtn = createEl("button", ["edit-btn"], card);
+  let editBtn = createEl("button", ["edit-btn", "btn", "grey"], card);
   editBtn.innerText = "✍️";
 
-  let saveBtn = createEl("button", ["save-btn"], false);
+  let saveBtn = createEl("button", ["save-btn", "btn", "blue"], false);
   saveBtn.innerText = "💾";
 
-  let deleteBtn = createEl("button", ["delete-btn"], card);
+  let deleteBtn = createEl("button", ["delete-btn", "btn", "red"], card);
   deleteBtn.innerText = "X";
 
   editBtn.addEventListener("click", (event) => {
